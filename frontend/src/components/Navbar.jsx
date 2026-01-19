@@ -21,15 +21,15 @@ export const Navbar = () => {
   const isActive = (path) => location.pathname === path;
 
   return (
-    <nav className="bg-white/95 backdrop-blur-md border-b border-gray-200 sticky top-0 z-50 shadow-sm">
+    <nav className="bg-gradient-to-r from-slate-900 via-blue-950 to-slate-900 backdrop-blur-md border-b border-slate-800 sticky top-0 z-50 shadow-lg">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-3 group">
-            <div className="w-12 h-12 bg-gradient-to-br from-blue-900 to-blue-700 rounded-xl flex items-center justify-center group-hover:scale-105 transition-transform shadow-md">
+            <div className="w-12 h-12 bg-gradient-to-br from-amber-500 to-amber-600 rounded-xl flex items-center justify-center group-hover:scale-105 transition-transform shadow-lg">
               <span className="text-white font-bold text-xl">FF</span>
             </div>
-            <span className="font-bold text-lg text-gray-900 hidden sm:block">Future Fund Foundation</span>
+            <span className="font-bold text-lg text-white hidden sm:block">Future Fund Foundation</span>
           </Link>
 
           {/* Desktop Navigation */}
@@ -40,8 +40,8 @@ export const Navbar = () => {
                 to={link.path}
                 className={`px-4 py-2 rounded-lg text-sm font-semibold transition-all ${
                   isActive(link.path)
-                    ? 'text-blue-900 bg-blue-50'
-                    : 'text-gray-700 hover:text-blue-900 hover:bg-gray-50'
+                    ? 'text-white bg-blue-700'
+                    : 'text-slate-300 hover:text-white hover:bg-slate-800'
                 }`}
               >
                 {link.label}
@@ -52,7 +52,7 @@ export const Navbar = () => {
           {/* Mobile menu button */}
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="lg:hidden p-2 rounded-lg text-gray-700 hover:bg-gray-100 transition-colors"
+            className="lg:hidden p-2 rounded-lg text-slate-300 hover:bg-slate-800 transition-colors"
           >
             {mobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
           </button>
@@ -61,7 +61,7 @@ export const Navbar = () => {
 
       {/* Mobile Navigation */}
       {mobileMenuOpen && (
-        <div className="lg:hidden border-t border-gray-200 bg-white">
+        <div className="lg:hidden border-t border-slate-800 bg-slate-900">
           <div className="px-4 pt-4 pb-6 space-y-2">
             {navLinks.map((link) => (
               <Link
@@ -70,8 +70,8 @@ export const Navbar = () => {
                 onClick={() => setMobileMenuOpen(false)}
                 className={`block px-4 py-3 rounded-lg text-base font-semibold transition-all ${
                   isActive(link.path)
-                    ? 'text-blue-900 bg-blue-50'
-                    : 'text-gray-700 hover:text-blue-900 hover:bg-gray-50'
+                    ? 'text-white bg-blue-700'
+                    : 'text-slate-300 hover:text-white hover:bg-slate-800'
                 }`}
               >
                 {link.label}
