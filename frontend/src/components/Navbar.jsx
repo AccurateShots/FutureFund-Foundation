@@ -21,16 +21,15 @@ export const Navbar = () => {
   const isActive = (path) => location.pathname === path;
 
   return (
-    <nav className="bg-gradient-to-r from-slate-900 via-blue-950 to-slate-900 backdrop-blur-md border-b border-slate-800 sticky top-0 z-50 shadow-lg">
+    <nav className="bg-[#1a1f3a] backdrop-blur-md border-b border-slate-800/50 sticky top-0 z-50 shadow-lg">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-20">
+        <div className="flex justify-between items-center py-3">
           {/* Logo Banner */}
-          <Link to="/" className="flex items-center group">
+          <Link to="/" className="flex items-center group py-1">
             <img 
               src="https://customer-assets.emergentagent.com/job_9d4e3acb-aa32-4fb6-b30c-ca6b8c6ce430/artifacts/en2ibv2r_image.png" 
               alt="Future Fund Foundation" 
-              className="h-16 w-auto group-hover:scale-105 transition-transform"
-              style={{ maxHeight: '64px' }}
+              className="h-14 w-auto group-hover:scale-105 transition-transform"
             />
           </Link>
 
@@ -63,7 +62,7 @@ export const Navbar = () => {
 
       {/* Mobile Navigation */}
       {mobileMenuOpen && (
-        <div className="lg:hidden border-t border-slate-800 bg-slate-900">
+        <div className="lg:hidden border-t border-slate-800 bg-[#1a1f3a]">
           <div className="px-4 pt-4 pb-6 space-y-2">
             {navLinks.map((link) => (
               <Link
