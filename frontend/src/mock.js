@@ -21,19 +21,19 @@ export const mockSubmitSchoolInterest = async (data) => {
 };
 
 export const leadershipTeam = [
-  { role: 'Executive Director (CEO)', name: 'TBD', responsibilities: 'Overall strategy, external relations, national growth' },
-  { role: 'COO / Head of Operations', name: 'TBD', responsibilities: 'Internal systems, execution, scalability' },
-  { role: 'CFO / Head of Finance', name: 'TBD', responsibilities: 'Financial planning, budgeting, resource allocation' },
-  { role: 'CPO / Chief Programs Officer', name: 'TBD', responsibilities: 'Learning Kit development, curriculum standards' },
-  { role: 'Director of Partnerships', name: 'TBD', responsibilities: 'Sponsors, schools, strategic alliances' },
-  { role: 'Director of Chapter Growth', name: 'TBD', responsibilities: 'Chapter expansion, school recruitment, onboarding' },
-  { role: 'Training & Quality Lead', name: 'TBD', responsibilities: 'Training programs, quality assurance, best practices' },
-  { role: 'Data & Impact Lead', name: 'TBD', responsibilities: 'Data analysis, impact measurement, reporting' },
+  { role: 'Executive Director (CEO)', name: 'Adamya Bajpayee', responsibilities: 'Overall strategy, external relations, national growth' },
+  { role: 'COO / Head of Operations', name: 'Ricky Chintla', responsibilities: 'Internal systems, execution, scalability' },
+  { role: 'CFO / Head of Finance', name: 'Aarav Shah', responsibilities: 'Financial planning, budgeting, resource allocation' },
+  { role: 'CPO / Chief Programs Officer', name: 'Pranav Iswara', responsibilities: 'Learning Kit development, curriculum standards' },
+  { role: 'Director of Partnerships', name: 'Musa Ahmed', responsibilities: 'Sponsors, schools, strategic alliances' },
+  { role: 'Director of Chapter Growth', name: 'Diya Singh, Suhana Suthar', responsibilities: 'Chapter expansion, school recruitment, onboarding' },
+  { role: 'Training & Quality Lead', name: 'Gourav Nair', responsibilities: 'Training programs, quality assurance, best practices' },
+  { role: 'Data & Impact Lead', name: 'Noah Laurent', responsibilities: 'Data analysis, impact measurement, reporting' },
   { role: 'Product / Tech Lead', name: 'TBD', responsibilities: 'Technology infrastructure, product development' },
-  { role: 'Marketing & Communications Lead', name: 'TBD', responsibilities: 'Brand strategy, public relations, communications' },
-  { role: 'Media / Creative Lead', name: 'TBD', responsibilities: 'Content creation, visual design, creative direction' },
-  { role: 'Legal / Compliance & Safeguarding Lead', name: 'TBD', responsibilities: 'Legal compliance, risk management, safeguarding policies' },
-  { role: 'Director of Strategy and Operations', name: 'TBD', responsibilities: 'Strategic planning, operational excellence, process optimization' },
+  { role: 'Marketing & Communications Lead', name: 'Suhani Parmar', responsibilities: 'Brand strategy, public relations, communications' },
+  { role: 'Media / Creative Lead', name: 'Dhilan Inamdar', responsibilities: 'Content creation, visual design, creative direction' },
+  { role: 'Legal / Compliance & Safeguarding Lead', name: 'Hudson Zuniga', responsibilities: 'Legal compliance, risk management, safeguarding policies' },
+  { role: 'Director of Strategy and Operations', name: 'Fayyaz Sathak', responsibilities: 'Strategic planning, operational excellence, process optimization' },
   { role: 'Social Media Manager', name: 'TBD', responsibilities: 'Social media strategy, content, community engagement' }
 ];
 
