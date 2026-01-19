@@ -24,14 +24,14 @@ export const Navbar = () => {
     <nav className="bg-gradient-to-r from-slate-900 via-blue-950 to-slate-900 backdrop-blur-md border-b border-slate-800 sticky top-0 z-50 shadow-lg">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
-          {/* Logo */}
-          <Link to="/" className="flex items-center space-x-3 group">
+          {/* Logo Banner */}
+          <Link to="/" className="flex items-center group">
             <img 
-              src="https://customer-assets.emergentagent.com/job_9d4e3acb-aa32-4fb6-b30c-ca6b8c6ce430/artifacts/nzgs8dxz_image.png" 
+              src="https://customer-assets.emergentagent.com/job_9d4e3acb-aa32-4fb6-b30c-ca6b8c6ce430/artifacts/en2ibv2r_image.png" 
               alt="Future Fund Foundation" 
-              className="h-12 w-auto group-hover:scale-105 transition-transform"
+              className="h-16 w-auto group-hover:scale-105 transition-transform"
+              style={{ maxHeight: '64px' }}
             />
-            <span className="font-bold text-lg text-white hidden sm:block">Future Fund Foundation</span>
           </Link>
 
           {/* Desktop Navigation */}
