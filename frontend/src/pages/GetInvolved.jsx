@@ -64,11 +64,23 @@ export const GetInvolved = () => {
   return (
     <div className="min-h-screen bg-slate-900">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-slate-950 via-blue-950 to-slate-900 text-white py-20 sm:py-28">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <section className="relative bg-gradient-to-br from-slate-950 via-blue-950 to-slate-900 overflow-hidden py-24 sm:py-32">
+        <div className="absolute inset-0 overflow-hidden">
+          <div className="absolute -top-40 -right-40 w-80 h-80 bg-green-500/10 rounded-full blur-3xl animate-pulse"></div>
+          <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-blue-500/10 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1s' }}></div>
+        </div>
+        
+        <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <ScrollReveal>
-            <h1 className="text-5xl sm:text-6xl font-bold mb-6">Get Involved</h1>
-            <p className="text-2xl text-slate-300">
+            <div className="inline-block mb-6">
+              <span className="px-6 py-3 bg-green-500/20 backdrop-blur-sm border border-green-500/30 rounded-full text-green-300 text-sm font-bold tracking-wide">
+                JOIN THE MOVEMENT
+              </span>
+            </div>
+            <h1 className="text-5xl sm:text-6xl lg:text-7xl font-extrabold text-white mb-8 leading-tight">
+              Get <span className="highlight-hover highlight-hover-dark">Involved</span>
+            </h1>
+            <p className="text-2xl sm:text-3xl text-slate-300 font-light">
               Join the national movement to improve how K–12 schools operate
             </p>
           </ScrollReveal>
