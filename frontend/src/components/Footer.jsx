@@ -25,11 +25,11 @@ export const Footer = () => {
               Building a national, chapter-based system to improve how K–12 schools operate through standardized Learning Kits and structured implementation.
             </p>
             <a 
-              href="mailto:info@futurefund.org" 
+              href="mailto:futurefundfoundation@gmail.com" 
               className="inline-flex items-center text-amber-400 hover:text-amber-300 transition-colors font-medium"
             >
               <Mail className="h-5 w-5 mr-2" />
-              info@futurefund.org
+              futurefundfoundation@gmail.com
             </a>
           </div>
 
