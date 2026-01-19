@@ -27,7 +27,10 @@ export const Home = () => {
             </div>
             
             <h1 className="text-5xl sm:text-6xl lg:text-7xl font-extrabold text-white mb-8 leading-tight tracking-tight">
-              <WordSlider /> with Future Fund Through
+              <div className="flex flex-wrap justify-center items-center gap-x-4">
+                <WordSlider />
+                <span>with Future Fund</span>
+              </div>
               <span className="block mt-2 bg-gradient-to-r from-amber-400 to-amber-200 bg-clip-text text-transparent">
                 Structure and Consistency
               </span>
