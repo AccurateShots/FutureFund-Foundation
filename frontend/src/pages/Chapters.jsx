@@ -20,18 +20,28 @@ export const Chapters = () => {
 
       {/* Overview Section */}
       <section className="py-20 sm:py-28 bg-slate-900">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <ScrollReveal>
-            <h2 className="text-4xl sm:text-5xl font-bold text-white mb-8 text-center">What Is a Chapter?</h2>
-            <div className="space-y-6 text-lg text-slate-300 leading-relaxed">
-              <p>
-                A chapter is a school-based group that implements Future Fund Foundation Learning Kits under a structured leadership model. Each chapter operates within a national framework, receiving support, training, and evaluation while maintaining local autonomy in execution.
-              </p>
-              <p>
-                Chapters are student-led with faculty advisors, ensuring that programs are implemented by those who benefit most while maintaining adult oversight and accountability.
-              </p>
-            </div>
+            <h2 className="text-4xl sm:text-5xl font-bold text-white mb-12 text-center">What Is a Chapter?</h2>
           </ScrollReveal>
+          <div className="grid md:grid-cols-2 gap-8">
+            <ScrollReveal delay={100}>
+              <div className="bg-slate-800/30 border border-slate-700 p-8 rounded-2xl">
+                <h3 className="text-2xl font-bold text-blue-400 mb-4">School-Based Groups</h3>
+                <p className="text-lg text-slate-300 leading-relaxed">
+                  A chapter is a school-based group that implements Future Fund Foundation Learning Kits under a structured leadership model with national framework support.
+                </p>
+              </div>
+            </ScrollReveal>
+            <ScrollReveal delay={200}>
+              <div className="bg-slate-800/30 border border-slate-700 p-8 rounded-2xl">
+                <h3 className="text-2xl font-bold text-blue-400 mb-4">Student-Led Model</h3>
+                <p className="text-lg text-slate-300 leading-relaxed">
+                  Chapters are student-led with faculty advisors, ensuring programs are implemented by those who benefit most while maintaining adult oversight.
+                </p>
+              </div>
+            </ScrollReveal>
+          </div>
         </div>
       </section>
 
