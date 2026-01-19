@@ -1,15 +1,12 @@
 import { Link } from 'react-router-dom';
 import { Mail, Instagram, Youtube, Facebook, Twitter } from 'lucide-react';
-import { SiTiktok, SiGofundme } from 'react-icons/si';
 
 export const Footer = () => {
   const socialLinks = [
     { name: 'Instagram', icon: Instagram, href: 'https://instagram.com/futurefund', color: 'hover:text-pink-400' },
     { name: 'YouTube', icon: Youtube, href: 'https://youtube.com/@futurefund', color: 'hover:text-red-500' },
-    { name: 'TikTok', icon: SiTiktok, href: 'https://tiktok.com/@futurefund', color: 'hover:text-white' },
     { name: 'Facebook', icon: Facebook, href: 'https://facebook.com/futurefund', color: 'hover:text-blue-500' },
-    { name: 'Twitter/X', icon: Twitter, href: 'https://twitter.com/futurefund', color: 'hover:text-sky-400' },
-    { name: 'GoFundMe', icon: SiGofundme, href: 'https://gofundme.com/futurefund', color: 'hover:text-green-500' }
+    { name: 'Twitter/X', icon: Twitter, href: 'https://twitter.com/futurefund', color: 'hover:text-sky-400' }
   ];
 
   return (
@@ -79,6 +76,9 @@ export const Footer = () => {
               );
             })}
           </div>
+          <p className="text-center text-sm text-gray-500 mt-6">
+            Follow us on social media for updates and announcements
+          </p>
         </div>
 
         <div className="border-t border-gray-700 pt-8 flex flex-col sm:flex-row justify-between items-center text-sm text-gray-400">
