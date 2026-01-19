@@ -49,7 +49,7 @@ export const BoardCarousel = ({ members = boardMembers }) => {
           const maxIndex = Math.max(0, members.length - itemsPerView);
           return prev >= maxIndex ? 0 : prev + 1;
         });
-      }, 3000); // Change every 3 seconds
+      }, 2000); // Change every 2 seconds - faster carousel
 
       return () => clearInterval(interval);
     }
