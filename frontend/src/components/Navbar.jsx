@@ -27,9 +27,9 @@ export const Navbar = () => {
           {/* Logo Banner - Much Larger */}
           <Link to="/" className="flex items-center group">
             <img 
-              src="https://customer-assets.emergentagent.com/job_9d4e3acb-aa32-4fb6-b30c-ca6b8c6ce430/artifacts/4iay14ke_image.png" 
+              src="https://customer-assets.emergentagent.com/job_9d4e3acb-aa32-4fb6-b30c-ca6b8c6ce430/artifacts/73ffrhrh_image.png" 
               alt="Future Fund Foundation" 
-              className="h-20 w-auto group-hover:scale-105 transition-transform"
+              className="h-20 w-auto object-contain group-hover:scale-105 transition-transform"
             />
           </Link>
 
