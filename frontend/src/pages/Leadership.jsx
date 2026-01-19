@@ -19,18 +19,28 @@ export const Leadership = () => {
 
       {/* Overview Section */}
       <section className="py-20 sm:py-28 bg-slate-900">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <ScrollReveal>
-            <h2 className="text-4xl sm:text-5xl font-bold text-white mb-8 text-center">Our Structure</h2>
-            <div className="space-y-6 text-lg text-slate-300 leading-relaxed">
-              <p>
-                Future Fund Foundation is led by students who understand the challenges schools face and are committed to building scalable solutions. Our leadership structure prioritizes clear roles, defined responsibilities, and accountability for results.
-              </p>
-              <p>
-                Each leadership position carries real responsibility for specific organizational functions. We believe in execution over titles and measure success by outcomes, not intentions.
-              </p>
-            </div>
+            <h2 className="text-4xl sm:text-5xl font-bold text-white mb-12 text-center">Our Structure</h2>
           </ScrollReveal>
+          <div className="grid md:grid-cols-2 gap-8">
+            <ScrollReveal delay={100}>
+              <div className="bg-slate-800/30 border border-slate-700 p-8 rounded-2xl">
+                <h3 className="text-2xl font-bold text-blue-400 mb-4">Student-Led Organization</h3>
+                <p className="text-lg text-slate-300 leading-relaxed">
+                  Future Fund Foundation is led by students who understand the challenges schools face and are committed to building scalable solutions.
+                </p>
+              </div>
+            </ScrollReveal>
+            <ScrollReveal delay={200}>
+              <div className="bg-slate-800/30 border border-slate-700 p-8 rounded-2xl">
+                <h3 className="text-2xl font-bold text-blue-400 mb-4">Results-Focused</h3>
+                <p className="text-lg text-slate-300 leading-relaxed">
+                  Our leadership structure prioritizes clear roles, defined responsibilities, and accountability for results. We believe in execution over titles.
+                </p>
+              </div>
+            </ScrollReveal>
+          </div>
         </div>
       </section>
 
