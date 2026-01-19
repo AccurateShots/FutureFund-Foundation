@@ -1,9 +1,19 @@
 import { Link } from 'react-router-dom';
-import { Mail } from 'lucide-react';
+import { Mail, Instagram, Youtube, Facebook, Twitter } from 'lucide-react';
+import { SiTiktok, SiGofundme } from 'react-icons/si';
 
 export const Footer = () => {
+  const socialLinks = [
+    { name: 'Instagram', icon: Instagram, href: 'https://instagram.com/futurefund', color: 'hover:text-pink-400' },
+    { name: 'YouTube', icon: Youtube, href: 'https://youtube.com/@futurefund', color: 'hover:text-red-500' },
+    { name: 'TikTok', icon: SiTiktok, href: 'https://tiktok.com/@futurefund', color: 'hover:text-white' },
+    { name: 'Facebook', icon: Facebook, href: 'https://facebook.com/futurefund', color: 'hover:text-blue-500' },
+    { name: 'Twitter/X', icon: Twitter, href: 'https://twitter.com/futurefund', color: 'hover:text-sky-400' },
+    { name: 'GoFundMe', icon: SiGofundme, href: 'https://gofundme.com/futurefund', color: 'hover:text-green-500' }
+  ];
+
   return (
-    <footer className="bg-gradient-to-br from-gray-900 via-blue-950 to-gray-900 text-white mt-24">
+    <footer className="bg-gradient-to-br from-gray-900 via-blue-950 to-gray-900 text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
           {/* About */}
@@ -46,6 +56,28 @@ export const Footer = () => {
               <li><Link to="/leadership" className="text-gray-300 hover:text-white transition-colors">Leadership</Link></li>
               <li><Link to="/contact" className="text-gray-300 hover:text-white transition-colors">Contact</Link></li>
             </ul>
+          </div>
+        </div>
+
+        {/* Social Media Links */}
+        <div className="border-t border-gray-700 pt-8 mb-8">
+          <h3 className="font-bold text-white mb-6 text-lg text-center">Connect With Us</h3>
+          <div className="flex justify-center gap-4 flex-wrap">
+            {socialLinks.map((social) => {
+              const IconComponent = social.icon;
+              return (
+                <a
+                  key={social.name}
+                  href={social.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={`w-12 h-12 bg-slate-800/50 backdrop-blur-sm border border-slate-700 rounded-xl flex items-center justify-center text-gray-400 ${social.color} transition-all duration-300 hover:scale-110 hover:border-slate-600`}
+                  aria-label={social.name}
+                >
+                  <IconComponent className="h-5 w-5" />
+                </a>
+              );
+            })}
           </div>
         </div>
 
