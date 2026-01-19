@@ -141,18 +141,45 @@ export const About = () => {
 
       {/* Vision Section */}
       <section className="py-20 sm:py-28 bg-gradient-to-br from-slate-950 via-blue-950 to-slate-900">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <ScrollReveal>
-            <h2 className="text-4xl sm:text-5xl font-bold text-white mb-8">Our Long-Term Vision</h2>
-            <div className="space-y-6 text-lg text-slate-300 leading-relaxed">
-              <p>
-                We are building a national network of school chapters that implements proven systems, measures what works, and shares best practices. Our goal is to create a sustainable model where schools can adopt effective programs with confidence, knowing they are supported by structure, data, and a community committed to continuous improvement.
-              </p>
-              <p>
-                By focusing on execution over innovation for innovation's sake, we aim to demonstrate that consistent implementation of quality programs produces better outcomes than constantly chasing the next new initiative.
-              </p>
-            </div>
+            <h2 className="text-4xl sm:text-5xl font-bold text-white mb-12 text-center">Our Long-Term Vision</h2>
           </ScrollReveal>
+          <div className="grid md:grid-cols-3 gap-8">
+            <ScrollReveal delay={100}>
+              <div className="bg-slate-800/30 border border-slate-700 p-8 rounded-2xl text-center">
+                <div className="w-16 h-16 bg-gradient-to-br from-blue-600 to-blue-500 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                  <Users className="h-8 w-8 text-white" />
+                </div>
+                <h3 className="text-xl font-bold text-white mb-4">National Network</h3>
+                <p className="text-slate-300 leading-relaxed">
+                  Building a nationwide network of school chapters implementing proven systems and sharing best practices.
+                </p>
+              </div>
+            </ScrollReveal>
+            <ScrollReveal delay={200}>
+              <div className="bg-slate-800/30 border border-slate-700 p-8 rounded-2xl text-center">
+                <div className="w-16 h-16 bg-gradient-to-br from-amber-600 to-amber-500 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                  <Target className="h-8 w-8 text-white" />
+                </div>
+                <h3 className="text-xl font-bold text-white mb-4">Data-Driven</h3>
+                <p className="text-slate-300 leading-relaxed">
+                  Creating sustainable models supported by structure, data, and a community committed to continuous improvement.
+                </p>
+              </div>
+            </ScrollReveal>
+            <ScrollReveal delay={300}>
+              <div className="bg-slate-800/30 border border-slate-700 p-8 rounded-2xl text-center">
+                <div className="w-16 h-16 bg-gradient-to-br from-green-600 to-green-500 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                  <TrendingUp className="h-8 w-8 text-white" />
+                </div>
+                <h3 className="text-xl font-bold text-white mb-4">Execution Focus</h3>
+                <p className="text-slate-300 leading-relaxed">
+                  Demonstrating that consistent implementation of quality programs produces better outcomes than chasing new initiatives.
+                </p>
+              </div>
+            </ScrollReveal>
+          </div>
         </div>
       </section>
     </div>
