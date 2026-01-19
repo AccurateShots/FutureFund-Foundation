@@ -23,13 +23,13 @@ export const Navbar = () => {
   return (
     <nav className="bg-[#1a1f3a] backdrop-blur-md border-b border-slate-800/50 sticky top-0 z-50 shadow-lg">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center py-3">
-          {/* Logo Banner */}
-          <Link to="/" className="flex items-center group py-1">
+        <div className="flex justify-between items-center py-4">
+          {/* Logo Banner - Much Larger */}
+          <Link to="/" className="flex items-center group">
             <img 
               src="https://customer-assets.emergentagent.com/job_9d4e3acb-aa32-4fb6-b30c-ca6b8c6ce430/artifacts/4iay14ke_image.png" 
               alt="Future Fund Foundation" 
-              className="h-14 w-auto group-hover:scale-105 transition-transform"
+              className="h-20 w-auto group-hover:scale-105 transition-transform"
             />
           </Link>
 
