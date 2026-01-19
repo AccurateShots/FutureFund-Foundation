@@ -1,5 +1,5 @@
 import { programs } from '../mock';
-import { BookOpen, Tablet, FileCheck, Users2, CheckCircle } from 'lucide-react';
+import { BookOpen, Tablet, FileCheck, Users2, CheckCircle, Trophy } from 'lucide-react';
 import { ScrollReveal } from '../components/ScrollReveal';
 
 export const Programs = () => {
