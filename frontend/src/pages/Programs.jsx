@@ -12,11 +12,23 @@ export const Programs = () => {
   return (
     <div className="min-h-screen bg-slate-900">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-slate-950 via-blue-950 to-slate-900 text-white py-20 sm:py-28">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <section className="relative bg-gradient-to-br from-slate-950 via-blue-950 to-slate-900 overflow-hidden py-24 sm:py-32">
+        <div className="absolute inset-0 overflow-hidden">
+          <div className="absolute -top-40 -right-40 w-80 h-80 bg-blue-500/10 rounded-full blur-3xl animate-pulse"></div>
+          <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-amber-500/10 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1s' }}></div>
+        </div>
+        
+        <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <ScrollReveal>
-            <h1 className="text-5xl sm:text-6xl font-bold mb-6">Learning Kits</h1>
-            <p className="text-2xl text-slate-300">
+            <div className="inline-block mb-6">
+              <span className="px-6 py-3 bg-blue-500/20 backdrop-blur-sm border border-blue-500/30 rounded-full text-blue-300 text-sm font-bold tracking-wide">
+                CURRICULUM & IMPLEMENTATION
+              </span>
+            </div>
+            <h1 className="text-5xl sm:text-6xl lg:text-7xl font-extrabold text-white mb-8 leading-tight">
+              <span className="highlight-hover highlight-hover-dark">Learning Kits</span>
+            </h1>
+            <p className="text-2xl sm:text-3xl text-slate-300 font-light">
               Complete K–12 curriculum packages designed for consistent, scalable implementation
             </p>
           </ScrollReveal>
