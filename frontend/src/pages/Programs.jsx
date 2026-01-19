@@ -25,18 +25,28 @@ export const Programs = () => {
 
       {/* Overview Section */}
       <section className="py-20 sm:py-28 bg-slate-900">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <ScrollReveal>
-            <h2 className="text-4xl sm:text-5xl font-bold text-white mb-8 text-center">What Are Learning Kits?</h2>
-            <div className="space-y-6 text-lg text-slate-300 leading-relaxed">
-              <p>
-                Learning Kits are comprehensive curriculum packages that provide everything schools need to implement structured, high-quality programs. Each kit is tailored to specific grade levels and includes all materials, technology, assessments, and support resources required for successful execution.
-              </p>
-              <p>
-                By standardizing content and delivery, Learning Kits eliminate inconsistency, reduce implementation burden on teachers, and ensure that every student receives the same quality of instruction regardless of classroom or school.
-              </p>
-            </div>
+            <h2 className="text-4xl sm:text-5xl font-bold text-white mb-12 text-center">What Are Learning Kits?</h2>
           </ScrollReveal>
+          <div className="grid md:grid-cols-2 gap-8">
+            <ScrollReveal delay={100}>
+              <div className="bg-slate-800/30 border border-slate-700 p-8 rounded-2xl">
+                <h3 className="text-2xl font-bold text-blue-400 mb-4">Complete Packages</h3>
+                <p className="text-lg text-slate-300 leading-relaxed">
+                  Learning Kits are comprehensive curriculum packages that provide everything schools need to implement structured, high-quality programs tailored to specific grade levels.
+                </p>
+              </div>
+            </ScrollReveal>
+            <ScrollReveal delay={200}>
+              <div className="bg-slate-800/30 border border-slate-700 p-8 rounded-2xl">
+                <h3 className="text-2xl font-bold text-blue-400 mb-4">Standardized Quality</h3>
+                <p className="text-lg text-slate-300 leading-relaxed">
+                  By standardizing content and delivery, Learning Kits eliminate inconsistency and ensure every student receives the same quality instruction regardless of classroom or school.
+                </p>
+              </div>
+            </ScrollReveal>
+          </div>
         </div>
       </section>
 
