@@ -18,18 +18,28 @@ export const Competition = () => {
 
       {/* Overview Section */}
       <section className="py-20 sm:py-28 bg-slate-900">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <ScrollReveal>
-            <h2 className="text-4xl sm:text-5xl font-bold text-white mb-8 text-center">How the Competition Works</h2>
-            <div className="space-y-6 text-lg text-slate-300 leading-relaxed">
-              <p>
-                The Future Fund Foundation competition framework evaluates chapters based on what matters most: the quality of implementation, sustained consistency, and measurable impact. Unlike traditional competitions that rely on subjective judging or popularity, our model uses objective data to reward execution excellence.
-              </p>
-              <p>
-                Every chapter participates by default. There are no separate "competition teams"—the work your chapter does every day is what gets evaluated.
-              </p>
-            </div>
+            <h2 className="text-4xl sm:text-5xl font-bold text-white mb-12 text-center">How the Competition Works</h2>
           </ScrollReveal>
+          <div className="grid md:grid-cols-2 gap-8">
+            <ScrollReveal delay={100}>
+              <div className="bg-slate-800/30 border border-slate-700 p-8 rounded-2xl">
+                <h3 className="text-2xl font-bold text-amber-400 mb-4">Objective Evaluation</h3>
+                <p className="text-lg text-slate-300 leading-relaxed">
+                  Our framework evaluates chapters based on implementation quality, sustained consistency, and measurable impact using objective data to reward execution excellence.
+                </p>
+              </div>
+            </ScrollReveal>
+            <ScrollReveal delay={200}>
+              <div className="bg-slate-800/30 border border-slate-700 p-8 rounded-2xl">
+                <h3 className="text-2xl font-bold text-amber-400 mb-4">Automatic Participation</h3>
+                <p className="text-lg text-slate-300 leading-relaxed">
+                  Every chapter participates by default. There are no separate competition teams—the work your chapter does every day is what gets evaluated.
+                </p>
+              </div>
+            </ScrollReveal>
+          </div>
         </div>
       </section>
 
