@@ -18,21 +18,44 @@ export const About = () => {
 
       {/* Mission Section */}
       <section className="py-20 sm:py-28 bg-slate-900">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <ScrollReveal>
-            <h2 className="text-4xl sm:text-5xl font-bold text-white mb-8 text-center">Our Mission</h2>
-            <div className="space-y-6 text-lg text-slate-300 leading-relaxed">
-              <p>
-                Future Fund Foundation exists to address a fundamental problem in K–12 education: the lack of consistent, scalable systems that improve how schools operate. While many schools implement well-intentioned programs, these efforts are often fragmented, inconsistent, and impossible to scale.
-              </p>
-              <p>
-                We provide schools with standardized Learning Kits and a chapter-based implementation model that ensures structure, consistency, and measurable outcomes. Our approach is built on the principle that sustainable improvement requires both proven content and systematic execution.
-              </p>
-              <p>
-                By creating a national network of school chapters, we enable schools to implement best practices while contributing to a larger framework that measures what works and drives continuous improvement.
-              </p>
-            </div>
+            <h2 className="text-4xl sm:text-5xl font-bold text-white mb-12 text-center">Our Mission</h2>
           </ScrollReveal>
+          <div className="grid md:grid-cols-2 gap-8">
+            <ScrollReveal delay={100}>
+              <div className="bg-slate-800/30 border border-slate-700 p-8 rounded-2xl">
+                <h3 className="text-2xl font-bold text-amber-400 mb-4">The Challenge</h3>
+                <p className="text-lg text-slate-300 leading-relaxed">
+                  Future Fund Foundation exists to address a fundamental problem in K–12 education: the lack of consistent, scalable systems that improve how schools operate.
+                </p>
+              </div>
+            </ScrollReveal>
+            <ScrollReveal delay={200}>
+              <div className="bg-slate-800/30 border border-slate-700 p-8 rounded-2xl">
+                <h3 className="text-2xl font-bold text-amber-400 mb-4">The Reality</h3>
+                <p className="text-lg text-slate-300 leading-relaxed">
+                  While many schools implement well-intentioned programs, these efforts are often fragmented, inconsistent, and impossible to scale.
+                </p>
+              </div>
+            </ScrollReveal>
+            <ScrollReveal delay={300}>
+              <div className="bg-slate-800/30 border border-slate-700 p-8 rounded-2xl">
+                <h3 className="text-2xl font-bold text-amber-400 mb-4">Our Approach</h3>
+                <p className="text-lg text-slate-300 leading-relaxed">
+                  We provide schools with standardized Learning Kits and a chapter-based implementation model that ensures structure, consistency, and measurable outcomes.
+                </p>
+              </div>
+            </ScrollReveal>
+            <ScrollReveal delay={400}>
+              <div className="bg-slate-800/30 border border-slate-700 p-8 rounded-2xl">
+                <h3 className="text-2xl font-bold text-amber-400 mb-4">Our Impact</h3>
+                <p className="text-lg text-slate-300 leading-relaxed">
+                  By creating a national network of school chapters, we enable schools to implement best practices while contributing to a larger framework that measures what works.
+                </p>
+              </div>
+            </ScrollReveal>
+          </div>
         </div>
       </section>
 
