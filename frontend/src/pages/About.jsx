@@ -19,8 +19,8 @@ export const About = () => {
                 WHO WE ARE
               </span>
             </div>
-            <h1 className=\"text-5xl sm:text-6xl lg:text-7xl font-extrabold text-white mb-8 leading-tight\">
-              About <span className=\"highlight-hover highlight-hover-dark\">Future Fund</span> Foundation
+            <h1 className="text-5xl sm:text-6xl lg:text-7xl font-extrabold text-white mb-8 leading-tight">
+              About <span className="highlight-hover highlight-hover-dark">Future Fund</span> Foundation
             </h1>
             <p className="text-2xl sm:text-3xl text-slate-300 font-light">
               Building a national system to improve how K–12 schools operate
