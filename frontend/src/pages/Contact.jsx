@@ -77,8 +77,8 @@ export const Contact = () => {
                     </div>
                     <div className="ml-6">
                       <h3 className="font-semibold text-white mb-2 text-xl">Email</h3>
-                      <a href="mailto:info@futurefund.org" className="text-amber-400 hover:text-amber-300 transition-colors text-lg">
-                        info@futurefund.org
+                      <a href="mailto:futurefundfoundation@gmail.com" className="text-amber-400 hover:text-amber-300 transition-colors text-lg">
+                        futurefundfoundation@gmail.com
                       </a>
                       <p className="text-sm text-slate-400 mt-2">We typically respond within 24-48 hours</p>
                     </div>
