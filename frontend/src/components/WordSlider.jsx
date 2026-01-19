@@ -12,8 +12,8 @@ export const WordSlider = () => {
       setTimeout(() => {
         setCurrentIndex((prev) => (prev + 1) % words.length);
         setIsAnimating(false);
-      }, 400);
-    }, 800);
+      }, 600);
+    }, 1200);
 
     return () => clearInterval(interval);
   }, []);
