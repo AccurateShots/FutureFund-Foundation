@@ -26,9 +26,11 @@ export const Navbar = () => {
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-3 group">
-            <div className="w-12 h-12 bg-gradient-to-br from-amber-500 to-amber-600 rounded-xl flex items-center justify-center group-hover:scale-105 transition-transform shadow-lg">
-              <span className="text-white font-bold text-xl">FF</span>
-            </div>
+            <img 
+              src="https://customer-assets.emergentagent.com/job_9d4e3acb-aa32-4fb6-b30c-ca6b8c6ce430/artifacts/nzgs8dxz_image.png" 
+              alt="Future Fund Foundation" 
+              className="h-12 w-auto group-hover:scale-105 transition-transform"
+            />
             <span className="font-bold text-lg text-white hidden sm:block">Future Fund Foundation</span>
           </Link>
 

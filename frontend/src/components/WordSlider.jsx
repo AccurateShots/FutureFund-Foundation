@@ -20,10 +20,10 @@ export const WordSlider = () => {
 
   return (
     <span
-      className={`inline-block text-left transition-all duration-400 bg-gradient-to-r from-amber-400 to-amber-200 bg-clip-text text-transparent ${
+      className={`inline-block text-center transition-all duration-400 bg-gradient-to-r from-amber-400 to-amber-200 bg-clip-text text-transparent ${
         isAnimating ? 'opacity-0 translate-y-4' : 'opacity-100 translate-y-0'
       }`}
-      style={{ minWidth: '280px', display: 'inline-block' }}
+      style={{ minWidth: '240px', maxWidth: '240px' }}
     >
       {words[currentIndex]}
     </span>

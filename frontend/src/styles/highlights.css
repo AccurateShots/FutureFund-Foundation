@@ -1,0 +1,44 @@
+/* Text highlight effect on hover */
+.highlight-hover {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.highlight-hover::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #f59e0b, #fbbf24);
+  transition: width 0.4s ease;
+}
+
+.highlight-hover:hover::before {
+  width: 100%;
+}
+
+.highlight-hover:hover {
+  color: #fbbf24;
+}
+
+/* For dark backgrounds */
+.highlight-hover-dark::before {
+  background: linear-gradient(90deg, #fbbf24, #fcd34d);
+}
+
+.highlight-hover-dark:hover {
+  color: #fcd34d;
+}
+
+/* For light backgrounds */
+.highlight-hover-light::before {
+  background: linear-gradient(90deg, #1e3a8a, #3b82f6);
+}
+
+.highlight-hover-light:hover {
+  color: #3b82f6;
+}
