@@ -127,18 +127,45 @@ export const Programs = () => {
 
       {/* Implementation Section */}
       <section className="py-20 sm:py-28 bg-gradient-to-br from-slate-950 via-blue-950 to-slate-900">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <ScrollReveal>
-            <h2 className="text-4xl sm:text-5xl font-bold text-white mb-8">How Programs Are Implemented</h2>
-            <div className="space-y-6 text-lg text-slate-300 leading-relaxed">
-              <p>
-                Learning Kits are delivered through school chapters with trained student leaders and faculty advisors. Implementation includes onboarding, ongoing support, regular check-ins, and evaluation within the national competition framework.
-              </p>
-              <p>
-                Schools receive all materials, technology, and resources needed to launch. Our chapter model ensures that programs are executed consistently and measured for impact over time.
-              </p>
-            </div>
+            <h2 className="text-4xl sm:text-5xl font-bold text-white mb-12 text-center">How Programs Are Implemented</h2>
           </ScrollReveal>
+          <div className="grid md:grid-cols-3 gap-8">
+            <ScrollReveal delay={100}>
+              <div className="bg-slate-800/30 border border-slate-700 p-8 rounded-2xl text-center">
+                <div className="w-16 h-16 bg-gradient-to-br from-blue-600 to-blue-500 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                  <Users2 className="h-8 w-8 text-white" />
+                </div>
+                <h3 className="text-xl font-bold text-white mb-4">Chapter Delivery</h3>
+                <p className="text-slate-300 leading-relaxed">
+                  Learning Kits are delivered through school chapters with trained student leaders and faculty advisors.
+                </p>
+              </div>
+            </ScrollReveal>
+            <ScrollReveal delay={200}>
+              <div className="bg-slate-800/30 border border-slate-700 p-8 rounded-2xl text-center">
+                <div className="w-16 h-16 bg-gradient-to-br from-amber-600 to-amber-500 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                  <CheckCircle className="h-8 w-8 text-white" />
+                </div>
+                <h3 className="text-xl font-bold text-white mb-4">Complete Support</h3>
+                <p className="text-slate-300 leading-relaxed">
+                  Schools receive all materials, technology, and resources needed to launch with ongoing support and training.
+                </p>
+              </div>
+            </ScrollReveal>
+            <ScrollReveal delay={300}>
+              <div className="bg-slate-800/30 border border-slate-700 p-8 rounded-2xl text-center">
+                <div className="w-16 h-16 bg-gradient-to-br from-purple-600 to-purple-500 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                  <Trophy className="h-8 w-8 text-white" />
+                </div>
+                <h3 className="text-xl font-bold text-white mb-4">Measured Impact</h3>
+                <p className="text-slate-300 leading-relaxed">
+                  Programs are executed consistently and measured for impact within the national competition framework.
+                </p>
+              </div>
+            </ScrollReveal>
+          </div>
         </div>
       </section>
     </div>
