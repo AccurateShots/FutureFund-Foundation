@@ -27,10 +27,10 @@ export const Home = () => {
             </div>
             
             <h1 className="text-5xl sm:text-6xl lg:text-7xl font-extrabold text-white mb-8 leading-tight tracking-tight">
-              <div className="flex flex-wrap justify-center items-center gap-x-4">
+              <span style={{ display: 'inline-block', marginRight: '0.5rem' }}>
                 <WordSlider />
-                <span>with Future Fund</span>
-              </div>
+              </span>
+              <span style={{ display: 'inline-block' }}>with Future Fund</span>
               <span className="block mt-2 bg-gradient-to-r from-amber-400 to-amber-200 bg-clip-text text-transparent">
                 Structure and Consistency
               </span>
