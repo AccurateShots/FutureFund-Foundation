@@ -21,12 +21,20 @@ export const mockSubmitSchoolInterest = async (data) => {
 };
 
 export const leadershipTeam = [
-  { role: 'Chief Executive Officer', name: 'TBD', responsibilities: 'Overall strategy, external relations, national growth' },
-  { role: 'Chief Operations Officer', name: 'TBD', responsibilities: 'Internal systems, execution, scalability' },
-  { role: 'Director of Programs', name: 'TBD', responsibilities: 'Learning Kit development, curriculum standards' },
-  { role: 'Director of Chapters', name: 'TBD', responsibilities: 'Chapter support, onboarding, training' },
-  { role: 'Director of Competition', name: 'TBD', responsibilities: 'Scoring system, evaluation, national framework' },
-  { role: 'Director of Partnerships', name: 'TBD', responsibilities: 'Sponsors, schools, strategic alliances' }
+  { role: 'Executive Director (CEO)', name: 'TBD', responsibilities: 'Overall strategy, external relations, national growth' },
+  { role: 'COO / Head of Operations', name: 'TBD', responsibilities: 'Internal systems, execution, scalability' },
+  { role: 'CFO / Head of Finance', name: 'TBD', responsibilities: 'Financial planning, budgeting, resource allocation' },
+  { role: 'CPO / Chief Programs Officer', name: 'TBD', responsibilities: 'Learning Kit development, curriculum standards' },
+  { role: 'Director of Partnerships', name: 'TBD', responsibilities: 'Sponsors, schools, strategic alliances' },
+  { role: 'Director of Chapter Growth', name: 'TBD', responsibilities: 'Chapter expansion, school recruitment, onboarding' },
+  { role: 'Training & Quality Lead', name: 'TBD', responsibilities: 'Training programs, quality assurance, best practices' },
+  { role: 'Data & Impact Lead', name: 'TBD', responsibilities: 'Data analysis, impact measurement, reporting' },
+  { role: 'Product / Tech Lead', name: 'TBD', responsibilities: 'Technology infrastructure, product development' },
+  { role: 'Marketing & Communications Lead', name: 'TBD', responsibilities: 'Brand strategy, public relations, communications' },
+  { role: 'Media / Creative Lead', name: 'TBD', responsibilities: 'Content creation, visual design, creative direction' },
+  { role: 'Legal / Compliance & Safeguarding Lead', name: 'TBD', responsibilities: 'Legal compliance, risk management, safeguarding policies' },
+  { role: 'Director of Strategy and Operations', name: 'TBD', responsibilities: 'Strategic planning, operational excellence, process optimization' },
+  { role: 'Social Media Manager', name: 'TBD', responsibilities: 'Social media strategy, content, community engagement' }
 ];
 
 export const programs = {
