@@ -2,19 +2,28 @@ import { useState, useEffect } from 'react';
 import { ChevronLeft, ChevronRight, User } from 'lucide-react';
 import { Button } from './ui/button';
 
-// Placeholder board members - can be replaced with real data later
-const placeholderMembers = [
-  { id: 1, name: 'Board Member 1', role: 'Chairman', bio: 'Leadership role placeholder' },
-  { id: 2, name: 'Board Member 2', role: 'Vice Chairman', bio: 'Leadership role placeholder' },
-  { id: 3, name: 'Board Member 3', role: 'Secretary', bio: 'Leadership role placeholder' },
-  { id: 4, name: 'Board Member 4', role: 'Treasurer', bio: 'Leadership role placeholder' },
-  { id: 5, name: 'Board Member 5', role: 'Member at Large', bio: 'Leadership role placeholder' },
-  { id: 6, name: 'Board Member 6', role: 'Member at Large', bio: 'Leadership role placeholder' }
+// Board members with actual positions
+const boardMembers = [
+  { id: 1, name: 'Executive Director (CEO)', role: 'Chief Executive', bio: 'Overall strategy, external relations, national growth' },
+  { id: 2, name: 'COO / Head of Operations', role: 'Chief Operating Officer', bio: 'Internal systems, execution, scalability' },
+  { id: 3, name: 'CFO / Head of Finance', role: 'Chief Financial Officer', bio: 'Financial planning, budgeting, resource allocation' },
+  { id: 4, name: 'CPO / Chief Programs Officer', role: 'Chief Programs Officer', bio: 'Learning Kit development, curriculum standards' },
+  { id: 5, name: 'Director of Partnerships', role: 'Partnerships', bio: 'Sponsors, schools, strategic alliances' },
+  { id: 6, name: 'Director of Chapter Growth', role: 'Chapter Growth', bio: 'Chapter expansion, school recruitment, onboarding' },
+  { id: 7, name: 'Training & Quality Lead', role: 'Training & Quality', bio: 'Training programs, quality assurance, best practices' },
+  { id: 8, name: 'Data & Impact Lead', role: 'Data & Impact', bio: 'Data analysis, impact measurement, reporting' },
+  { id: 9, name: 'Product / Tech Lead', role: 'Product & Technology', bio: 'Technology infrastructure, product development' },
+  { id: 10, name: 'Marketing & Communications Lead', role: 'Marketing & Comms', bio: 'Brand strategy, public relations, communications' },
+  { id: 11, name: 'Media / Creative Lead', role: 'Media & Creative', bio: 'Content creation, visual design, creative direction' },
+  { id: 12, name: 'Legal / Compliance & Safeguarding Lead', role: 'Legal & Compliance', bio: 'Legal compliance, risk management, safeguarding' },
+  { id: 13, name: 'Director of Strategy and Operations', role: 'Strategy & Operations', bio: 'Strategic planning, operational excellence' },
+  { id: 14, name: 'Social Media Manager', role: 'Social Media', bio: 'Social media strategy, content, community engagement' }
 ];
 
-export const BoardCarousel = ({ members = placeholderMembers }) => {
+export const BoardCarousel = ({ members = boardMembers }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [itemsPerView, setItemsPerView] = useState(3);
+  const [isPaused, setIsPaused] = useState(false);
 
   useEffect(() => {
     const handleResize = () => {
@@ -32,6 +41,20 @@ export const BoardCarousel = ({ members = placeholderMembers }) => {
     return () => window.removeEventListener('resize', handleResize);
   }, []);
 
+  // Auto-play functionality
+  useEffect(() => {
+    if (!isPaused) {
+      const interval = setInterval(() => {
+        setCurrentIndex((prev) => {
+          const maxIndex = Math.max(0, members.length - itemsPerView);
+          return prev >= maxIndex ? 0 : prev + 1;
+        });
+      }, 3000); // Change every 3 seconds
+
+      return () => clearInterval(interval);
+    }
+  }, [isPaused, members.length, itemsPerView]);
+
   const maxIndex = Math.max(0, members.length - itemsPerView);
 
   const next = () => {
@@ -43,7 +66,11 @@ export const BoardCarousel = ({ members = placeholderMembers }) => {
   };
 
   return (
-    <div className="relative">
+    <div 
+      className="relative"
+      onMouseEnter={() => setIsPaused(true)}
+      onMouseLeave={() => setIsPaused(false)}
+    >
       <div className="overflow-hidden">
         <div
           className="flex transition-transform duration-500 ease-out"
@@ -61,9 +88,9 @@ export const BoardCarousel = ({ members = placeholderMembers }) => {
                 <div className="w-24 h-24 bg-gradient-to-br from-amber-500 to-amber-600 rounded-full flex items-center justify-center mb-6 mx-auto group-hover:scale-110 transition-transform">
                   <User className="h-12 w-12 text-white" />
                 </div>
-                <h3 className="text-2xl font-bold text-white mb-2 text-center">{member.name}</h3>
+                <h3 className="text-xl font-bold text-white mb-2 text-center">{member.name}</h3>
                 <p className="text-amber-400 font-semibold mb-4 text-center">{member.role}</p>
-                <p className="text-slate-300 text-center">{member.bio}</p>
+                <p className="text-slate-300 text-sm leading-relaxed text-center">{member.bio}</p>
               </div>
             </div>
           ))}
